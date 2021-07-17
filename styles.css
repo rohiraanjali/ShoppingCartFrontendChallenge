@@ -138,8 +138,8 @@ body {
     justify-content: center;
     padding: 0;
   }
-  .quantity__minus,
-  .quantity__plus {
+  #quantity__minus,
+  #quantity__plus {
     display: block;
     width: 25px;
     height: 25px;
@@ -149,25 +149,25 @@ body {
     text-align: center;
     line-height: 23px;
   }
-  .quantity__minus:hover,
-  .quantity__plus:hover {
+  #quantity__minus:hover,
+  #quantity__plus:hover {
     background: #575b71;
     color: #fff;
     border-radius: 100%;
   } 
-  .quantity__minus {
+  #quantity__minus {
     border-radius: 50%;
     display: flex;
    justify-content: center;
    align-items: center;
   }
-  .quantity__plus {
+  #quantity__plus {
     border-radius: 50%;
     display: flex;
    justify-content: center;
    align-items: center;
   }
-  .quantity__input {
+  #quantity__input {
     width: 35px;
     height: 20px;
     margin: 0;
@@ -197,8 +197,6 @@ body {
     padding: 0 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    position: relative;
-    bottom: 10px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
   }
   .action-btn {
@@ -237,8 +235,11 @@ body {
   }
   hr {
       border: none;
-      height: 1px;
-      /* Set the hr color */
-      color: grey; /* old IE */
+      height: 0.2px;
+      color: lightgray; 
+      background: lightgray;
+  }
+  .place-order {
+      height: 50px;
       background: grey;
   }
