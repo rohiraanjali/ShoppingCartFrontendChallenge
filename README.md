@@ -16,3 +16,4 @@ Expected output produced:-
 
 ![image](https://user-images.githubusercontent.com/74822422/126039790-92acd1dc-fc4d-4856-abec-1695eb859789.png)
 
+### Deployed site : https://yellow-riddle-frontend-challenge.vercel.app/
