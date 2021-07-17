@@ -22,22 +22,22 @@ function updateCart(cart) {
 
     for (let i = 0; i < cart.length; i++) {
       let html = `
-           <div class="product-img-inner">
-             <div class="product-img"> 
+        <div class="product-img-inner">
+            <div class="product-img"> 
                 <img class="img" src="${cart[i].img}" />
                 <div class="product-cart1-details">
-                  <p class="product-name">${cart[i].name}</p>
-                  <small class="Product-seller">Seller:${cart[i].seller}
+                <p class="product-name">${cart[i].name}</p>
+                <small class="Product-seller">Seller:${cart[i].seller}
                     <img class="fAssured-true" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" />
-                  </small>
+                </small>
           
-                  <div class="Product-details">
-                     <p class="final-price">${cart[i].finalPrice} ${cart[i].currency}</p>   &nbsp;
-                     <p class="original-price">${cart[i].originalPrice} ${cart[i].currency}</p>&nbsp;
-                     <p class="discount-percentage">${cart[i].discountPercentage}% OFF</p>&nbsp;
-                     <p class="product-offer">${cart[i].offers.count} Offers available</p>
-                     <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" class="_3GN0Y0"><g fill="none"><path d="M-1-1h16v16H-1"></path><path d="M7 0C3.136 0 0 3.136 0 7s3.136 7 7 7 7-3.136 7-7-3.136-7-7-7zm.7 10.5H6.3V6.3h1.4v4.2zm0-5.6H6.3V3.5h1.4v1.4z" fill="#388e3c" class=""></path></g></svg>
-                  </div>
+                <div class="Product-details">
+                    <p class="final-price">${cart[i].finalPrice} ${cart[i].currency}</p>   &nbsp;
+                    <p class="original-price">${cart[i].originalPrice} ${cart[i].currency}</p>&nbsp;
+                    <p class="discount-percentage">${cart[i].discountPercentage}% OFF</p>&nbsp;
+                    <p class="product-offer">${cart[i].offers.count} Offers available</p>
+                    <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" class="_3GN0Y0"><g fill="none"><path d="M-1-1h16v16H-1"></path><path d="M7 0C3.136 0 0 3.136 0 7s3.136 7 7 7 7-3.136 7-7-3.136-7-7-7zm.7 10.5H6.3V6.3h1.4v4.2zm0-5.6H6.3V3.5h1.4v1.4z" fill="#388e3c" class=""></path></g></svg>
+                </div>
                 </div>
                 <div class="product-cart1-delivery-details">
                     <p class="product-delivery-date">Delivery by ${cart[i].delivery.estimatedDate} | Free <span class="strike-fee"> ₹${cart[i].delivery.originalDeliveryCharge}</span></p>
@@ -45,28 +45,28 @@ function updateCart(cart) {
                 </div>
             </div>
             <div class="cart-action">
-               <div class="quantity">
-                  <a href="#" onclick="decrementQty(${i})" id="quantity__minus"><span class="minus">-</span></a> &nbsp;
-                  <input name="quantity" onchange="updateQty(${i})" type="number" id="quantity__input" value=${cart[i].qty}> &nbsp;
-                  <a href="#" onclick="incrementQty(${i})" id="quantity__plus"><span class="plus">+</span></a> &nbsp;
-              </div>
-              <div class="action-btn">
+            <div class="quantity">
+                <a href="#" onclick="decrementQty(${i})" id="quantity__minus"><span class="minus">-</span></a> &nbsp;
+                <input name="quantity" onchange="updateQty(${i})" type="number" id="quantity__input" value=${cart[i].qty}> &nbsp;
+                <a href="#" onclick="incrementQty(${i})" id="quantity__plus"><span class="plus">+</span></a> &nbsp;
+            </div>
+            <div class="action-btn">
                 <button class="save-later">SAVE FOR LATER</button>
-                <button onclick="removeItem(${i})" class="remove-btn">REMOVE<button>
-              </div>
+                <span onclick="removeItem(${i})" class="remove-btn">REMOVE<span>
+            </div>
             </div> 
-          </div>`;
+        </div>`;
 
-      container.innerHTML += html;
+    container.innerHTML += html;
     }
 }
 
 function decrementQty(i) {
-  if(cart[i].qty === 1) return
-  let getItem = document.querySelectorAll("#quantity__input")[i];
-  cart[i].qty--;
-  getItem.value = cart[i].qty;
-  updatePrice(cart)
+    if(cart[i].qty === 1) return
+    let getItem = document.querySelectorAll("#quantity__input")[i];
+    cart[i].qty--;
+    getItem.value = cart[i].qty;
+    updatePrice(cart)
 }
 
 function incrementQty(i) {
@@ -102,7 +102,7 @@ function updateQty(i){
 }
 
 function removeItem(i){
-  cart = cart.filter((_, index) => index !== i )
-  updateCart(cart)
-  updatePrice(cart)
+    cart = cart.filter((_, index) => index !== i )
+    updateCart(cart)
+    updatePrice(cart)
 }

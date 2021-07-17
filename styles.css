@@ -231,15 +231,30 @@ body {
       color: hsl(123deg 43% 39%);
   }
   .total-amount {
-      font-weight: 800;
-  }
-  hr {
-      border: none;
-      height: 0.2px;
-      color: lightgray; 
-      background: lightgray;
-  }
-  .place-order {
-      height: 50px;
-      background: grey;
-  }
+    font-weight: 800;
+}
+hr {
+    border: none;
+    height: 0.2px;
+    color: lightgray; 
+    background: lightgray;
+}
+.place-order {
+    height: 80px;
+    background: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+.order-btn {
+    float: right;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 30%;
+    border: none;
+    background-color: hsl(20deg 97% 55%);
+    color: white;
+    font-family: var(--main-font);
+    font-weight: 550;
+    position: relative;
+    right: 15px;
+    top: 15px;
+}
