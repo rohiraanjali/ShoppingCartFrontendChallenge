@@ -14,6 +14,9 @@ body {
     padding: 50px;
     background-color: lightgray;
 }
+.product-cart-outer {
+    height: 530px;
+}
 .cart-div {
     width: 60%;
     height: 100%;
@@ -144,14 +147,15 @@ body {
     width: 25px;
     height: 25px;
     margin: 0;
-    background: #dee0ee;
+    background: linear-gradient(hsl(0deg 0% 100%),hsl(0deg 0% 98%));
+    border:1px solid hsl(0deg 0% 76%);
     text-decoration: none;
     text-align: center;
     line-height: 23px;
   }
   #quantity__minus:hover,
   #quantity__plus:hover {
-    background: #575b71;
+    background: #9a9a9c;
     color: #fff;
     border-radius: 100%;
   } 
@@ -208,10 +212,12 @@ body {
   }
   .save-later, .remove-btn {
      padding:0 18px;
+     color: hsl(0deg 0% 13%);
      cursor: pointer;
      background-color: transparent;
      border: none;
      font-weight: 550;
+     font-family: var(--main-font);
   }
   .save-later:hover, .remove-btn:hover {
       color: blue;
@@ -257,4 +263,5 @@ hr {
     position: relative;
     right: 15px;
     top: 15px;
+    border-radius: 5px;
 }

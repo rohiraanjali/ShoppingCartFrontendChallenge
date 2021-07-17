@@ -17,6 +17,7 @@ fetchData();
 function updateCart(cart) {
     let container = document.querySelector(".product-cart-1");
     let cartHeading = document.querySelector(".cart-heading");
+
     cartHeading.innerHTML = `My Cart (${cart.length})`;
     container.innerHTML = "";
 
@@ -52,7 +53,7 @@ function updateCart(cart) {
             </div>
             <div class="action-btn">
                 <button class="save-later">SAVE FOR LATER</button>
-                <span onclick="removeItem(${i})" class="remove-btn">REMOVE<span>
+                <button class="remove-btn" onclick="removeItem(${i})">REMOVE ITEM</button>
             </div>
             </div> 
         </div>`;
