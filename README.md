@@ -14,4 +14,5 @@ The product data can be fetched from https://yellowriddle.netlify.app/products.j
 
 Expected output produced:- 
 
-![image](https://user-images.githubusercontent.com/74822422/126039617-ce53c7fa-76bc-4727-bd71-620bb76b097f.png)
+![image](https://user-images.githubusercontent.com/74822422/126039790-92acd1dc-fc4d-4856-abec-1695eb859789.png)
+
