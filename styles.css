@@ -3,16 +3,24 @@
 
 :root {
     --main-font: 'Open Sans', sans-serif;
+    --product-card-color: whiteSmoke;
+    --black-color: black;
+    --grey-accent: grey;
+    --hsl-light-black: hsl(0deg 0% 13%);
+    --white-shade: #ffff;
+    --quantity-color: #dee0ee;
+    --background-color: lightgray;
 }
 body {
     font-family: var(--main-font);
+  
 }
 .page-grids {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 50px;
-    background-color: lightgray;
+    background-color: var(--background-color);
 }
 .product-cart-outer {
     height: 530px;
@@ -20,11 +28,11 @@ body {
 .cart-div {
     width: 60%;
     height: 100%;
-    background-color: whitesmoke;
+    background-color: var(--product-card-color);
     margin-right: 6px;
 }
 .cart-heading, .price-heading {
-    color: black;
+    color: var(--black-color);
     padding: 15px;
     font-weight: bolder;
     font-size:1rem;
@@ -33,17 +41,17 @@ body {
     border: none;
 }
 .price-heading {
-    color: grey;
+    color: var(--grey-accent);
 }
 .priceDetails-div{
     width: 25%;
     height: 310px;
-    background-color: whitesmoke;
+    background-color: var(--product-card-color);
     margin-left: 6px;
     font-size: 0.8rem;
 }
 .product-cart-1-outer {
-    background-color: whitesmoke;
+    background-color: var(--product-card-color);
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
     height: 200px;
 }
@@ -59,8 +67,6 @@ body {
     padding:0 3rem;
     padding-top: 0.8rem;
     padding-bottom: 0.3rem;
-    /* padding-bottom: 1rem; */
-    /* box-shadow: 0 0 5px rgba(0,0,0,0.1); */
 }
 
 .img {
@@ -76,7 +82,7 @@ body {
 .Product-seller {
     font-family: var(--main-font);
     padding-left: 2rem;
-    color: grey;
+    color: var(--grey-accent);
 }
 .fAssured-true {
     width: 60px;
@@ -90,7 +96,7 @@ body {
 .final-price {
     display: inline-block;
     font-size: 1rem;
-    color: hsl(0deg 0% 13%);
+    color: var(--hsl-light-black);
     font-weight: 600;
     margin-right: 8px;
     font-family: var(--main-font);
@@ -99,7 +105,7 @@ body {
     display: inline-block;
     font-family: var(--main-font);
     text-decoration: line-through;
-    color: grey;
+    color: var(--grey-accent);
     font-size: 0.8rem;
     margin-top: 18px;
     margin-right: 8px;
@@ -122,7 +128,7 @@ body {
 
 .product-delivery-date {
     font-size: 0.8rem;
-    color: hsl(0deg 0% 13%);
+    color: var(--hsl-light-black);
     line-height: 1.4;
     font-family: var(--main-font);
 }
@@ -131,7 +137,7 @@ body {
 }
 .product-replacement {
     font-size: 0.75rem;
-    color: hsl(0deg 0% 13%);
+    color: var(--hsl-light-black);
     line-height: 1.4;
     font-family: var(--main-font);
 }
@@ -156,7 +162,7 @@ body {
   #quantity__minus:hover,
   #quantity__plus:hover {
     background: #9a9a9c;
-    color: #fff;
+    color: var(--white-shade)f;
     border-radius: 100%;
   } 
   #quantity__minus {
@@ -176,12 +182,13 @@ body {
     height: 20px;
     margin: 0;
     padding: 0;
+    font-weight: 550;
     text-align: center;
-    border-top: 2px solid #dee0ee;
-    border-bottom: 2px solid #dee0ee;
-    border-left: 1px solid #dee0ee;
-    border-right: 2px solid #dee0ee;
-    background: #fff;
+    border-top: 2px solid var(--quantity-color);
+    border-bottom: 2px solid var(--quantity-color);
+    border-left: 1px solid var(--quantity-color);
+    border-right: 2px solid var(--quantity-color);
+    background: var(--white-shade);
     color: #8184a1;
   }
   .minus, .plus {
@@ -193,7 +200,7 @@ body {
   } 
   .quantity__minus:visited,
   .quantity__plus:visited {
-    color: #fff;
+    color: var(--white-shade);
   }
   .cart-action {
     display: flex;
@@ -207,12 +214,12 @@ body {
       display: flex;
       flex-direction: row;;
       font-size: 1rem;
-      color: hsl(0deg 0% 13%);
+      color: var(--hsl-light-black);
       font-weight: 550;
   }
   .save-later, .remove-btn {
      padding:0 18px;
-     color: hsl(0deg 0% 13%);
+     color: var(--hsl-light-black);
      cursor: pointer;
      background-color: transparent;
      border: none;
@@ -229,7 +236,7 @@ body {
     justify-content: space-between;
     padding: 12px;
     font-size: 1rem;
-    color: hsl(0deg 0% 13%);
+    color: var(--hsl-light-black);
     font-family: var(--main-font);
     font-weight: 550;
   }
@@ -242,12 +249,12 @@ body {
 hr {
     border: none;
     height: 0.2px;
-    color: lightgray; 
+    color: var(--hsl-light-black); 
     background: lightgray;
 }
 .place-order {
     height: 80px;
-    background: white;
+    background: var(--white-shade);
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 .order-btn {
@@ -257,7 +264,7 @@ hr {
     width: 30%;
     border: none;
     background-color: hsl(20deg 97% 55%);
-    color: white;
+    color: var(--white-shade);;
     font-family: var(--main-font);
     font-weight: 550;
     position: relative;
