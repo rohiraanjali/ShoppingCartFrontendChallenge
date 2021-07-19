@@ -1,3 +1,5 @@
+let cart=[];
+
 // Fetching product data from API 
 
 const fetchData = async() => {
