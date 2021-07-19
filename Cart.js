@@ -37,20 +37,20 @@ function updateCart(cart) {
                 <!-- Product details -->
 
                 <div class="Product-details">
-                    <p class="final-price">${cart[i].finalPrice} ${cart[i].currency}</p>   &nbsp;
-                    <p class="original-price">${cart[i].originalPrice} ${cart[i].currency}</p>&nbsp;
+                    <p class="final-price">₹ ${cart[i].finalPrice}</p>   &nbsp;
+                    <p class="original-price">₹ ${cart[i].originalPrice}</p>&nbsp;
                     <p class="discount-percentage">${cart[i].discountPercentage}% OFF</p>&nbsp;
                     <p class="product-offer">${cart[i].offers.count} Offers available</p>
                     <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" class="_3GN0Y0"><g fill="none"><path d="M-1-1h16v16H-1"></path><path d="M7 0C3.136 0 0 3.136 0 7s3.136 7 7 7 7-3.136 7-7-3.136-7-7-7zm.7 10.5H6.3V6.3h1.4v4.2zm0-5.6H6.3V3.5h1.4v1.4z" fill="#388e3c" class=""></path></g></svg>
                 </div>
-                </div>
+                <p class="product-delivery-date-mobile">Delivery by ${cart[i].delivery.estimatedDate} | Free <span class="strike-fee"> ₹${cart[i].delivery.originalDeliveryCharge}</span></p>                </div>
 
                 <!-- Product delivery details -->
-
-                <div class="product-cart1-delivery-details">
-                    <p class="product-delivery-date">Delivery by ${cart[i].delivery.estimatedDate} | Free <span class="strike-fee"> ₹${cart[i].delivery.originalDeliveryCharge}</span></p>
-                    <small class="product-replacement">${cart[i].delivery.replacementPolicyDuration} Replacement Policy</small>
-                </div>
+                 <div class="product-cart1-delivery-details">
+                <p class="product-delivery-date">Delivery by ${cart[i].delivery.estimatedDate} | Free <span class="strike-fee"> ₹${cart[i].delivery.originalDeliveryCharge}</span></p>
+                <small class="product-replacement">${cart[i].delivery.replacementPolicyDuration} Replacement Policy</small>
+            </div>
+                
             </div>
 
             <!-- Product cart action -> for updating quantiy, save for later and remove item -->
