@@ -2,7 +2,7 @@
  
 ## The functionality given to implement in vanilla Js
 
-The product data can be fetched from https://yellowriddle.netlify.app/products.json. The website/app should retrieve product data from the API endpoint mentioned above and render the cart interface depicted in the image. 
+The product data can be fetched from API(given) .The website/app should retrieve product data from the API endpoint mentioned above and render the cart interface depicted in the image. 
 
 ###Expected Functionality
 
