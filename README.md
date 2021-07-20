@@ -1,4 +1,4 @@
-# YellowRiddle_FrontendChallenge
+# ShoppingCart_FrontendChallenge
  
 ## The functionality given to implement in vanilla Js
 
